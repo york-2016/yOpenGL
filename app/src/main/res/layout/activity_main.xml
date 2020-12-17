@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.york.media.opengl.egl.YGLSurfaceView
+    <SurfaceView
+        android:id="@+id/mYGLSurfaceView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
