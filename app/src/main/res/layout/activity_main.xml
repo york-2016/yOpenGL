@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <SurfaceView
-        android:id="@+id/mYGLSurfaceView"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:onClick="gotoEmptyActivity"
+        android:text="1. OpenGl 清空屏幕" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoShapeActivity"
+        android:text="2. OpenGl 绘制形状" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoBitmapActivity"
+        android:text="3. OpenGl 绘制图片" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoVboActivity"
+        android:text="4. OpenGl 使用VBO" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoFboActivity"
+        android:text="5. OpenGl 使用FBO" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoOrthogonalActivity"
+        android:text="6. OpenGl 正交投影" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoWaterMarkActivity"
+        android:text="7. OpenGl 添加水印" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoCamera1"
+        android:text="8. Camera1 预览+VBO+FBO+矩阵+水印" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoCamera2"
+        android:text="9. Camera2 预览+VBO+FBO+矩阵+水印" />
+</LinearLayout>

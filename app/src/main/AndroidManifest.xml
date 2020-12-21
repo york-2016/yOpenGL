@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.york.media.opengl">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YOpenGL">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.EmptyActivity" />
+        <activity android:name=".activity.ShapeActivity" />
+        <activity android:name=".activity.BitmapActivity" />
+        <activity android:name=".activity.VboActivity" />
+        <activity android:name=".activity.FboActivity" />
+        <activity android:name=".activity.OrthogonalActivity" />
+        <activity android:name=".activity.WaterMarkActivity"/>
+        <activity android:name=".activity.Camera1Activity"/>
+        <activity android:name=".activity.Camera2Activity"/>
+
     </application>
 
 </manifest>
